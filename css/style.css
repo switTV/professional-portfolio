@@ -6,7 +6,10 @@
 
 body{
     background-color: rgb(255, 255, 255);
-    height: 3000px;
+}
+
+html{
+    font-size: 62.5%;
 }
 
 .containerNav{
@@ -27,6 +30,7 @@ body{
     text-decoration: none;
     margin-right: 15px;
     font-family: "Montserrat";
+    font-size: 1.6rem;
 }
 
 .containerPrincipalHeader{
@@ -49,7 +53,7 @@ body{
 }
 
 .containerPrincipalText h2{
-    font-size: 100px;
+    font-size: 10rem;
     color: #233d4d;
     font-family: "PT Serif";
 }
@@ -61,8 +65,9 @@ body{
 }
 
 .containerPrincipalText p{
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #233d4d;
+    width: 290px;
     font-family: "Montserrat";
 }
 
@@ -83,4 +88,127 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/* slider ---------------- */
+
+.gliderContenedor{
+    position: relative;
+    margin-top: 20px;
+}
+
+.gliderAnterior{
+    position: absolute;
+    bottom: calc(50%);
+    left: 5px;
+    z-index: 999;
+}
+
+.gliderSiguiente{
+    position: absolute;
+    bottom: calc(50%);
+    right: 5px;
+    z-index: 999;
+}
+
+.gliderAnterior,
+.gliderSiguiente{
+    height: 40px;
+    border: none;
+    width: 40px;
+    background-color: #f46036;
+    color: #d9ecfd;
+    font-size: 1.2rem;
+}
+
+.gliderElement{
+    margin: 10px;
+    background-color: #ffffff;
+    border: #233d4d 0.7px solid;
+}
+
+.gliderElement p{
+    background-color: #ffffff;
+    font-family: "Montserrat";
+    margin: 20px 0px 20px 10px;
+    font-size: 1.4rem;
+}
+
+/* slider ---------------------------- */
+
+/* tags------------- */
+
+.tag-html{
+    background-color: #f46036;
+    width: 70px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.tag-css{
+    background-color: #233d4d;
+    width: 60px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tag-js{
+    background-color: #867d28;
+    width: 60px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #C9E4CA;
+    font-size: 1.4rem;
+}
+
+/* tags --------------------- */
+
+.title-projects{
+    font-size: 40px;
+    text-align: right;
+    margin-right: 20px;
+    font-family: "PT Serif";
+    color: #233d4d;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .undrawImage {
+        display: none;
+    }
+    .containerPrincipalText{
+        position: absolute;
+        left: 30px;
+    }
+
+    .containerPrincipalText h2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerPrincipalText h2{
+        font-size: 60px;
+    }
+    .containerPrincipalText h2 span{
+        font-size: 60px;
+    }
+
+    .containerPrincipalText p{
+        font-size: 1.5rem;
+        color: #233d4d;
+        width: 290px;
+        font-family: "Montserrat";
+    }
 }

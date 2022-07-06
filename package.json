@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/switTV/professional-portfolio/issues"
   },
-  "homepage": "https://github.com/switTV/professional-portfolio#readme"
+  "homepage": "https://github.com/switTV/professional-portfolio#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2"
+  }
 }
